@@ -1,0 +1,9 @@
+{
+  "name": "cordova-plugin-nearbyshare",
+  "version": "1.0.0",
+  "description": "Nearby Share plugin for Cordova",
+  "cordova": {
+    "id": "cordova-plugin-nearbyshare",
+    "platforms": ["android"]
+  }
+}
