@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<plugin id="cordova-plugin-nearbyshare" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>NearbySharePlugin</name>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-nearbyshare" version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>NearbyShareHelper</name>
+    <description>Nearby Share plugin for Cordova/OutSystems</description>
+    <license>Apache 2.0</license>
+    <keywords>Nearby Share</keywords>
+
     <js-module src="www/NearbyShareHelper.js" name="NearbyShareHelper">
         <clobbers target="NearbyShareHelper" />
     </js-module>
 
     <platform name="android">
         <source-file src="src/android/NearbyShareHelper.java" target-dir="src/com/example/nearbysharepluginnative" />
-        <framework src="src/android/libs/app-release.aar" custom="true" type="aar" />
+        <framework src="src/android/libs/app-release.aar" custom="true" type="gradleReference" />
     </platform>
+
 </plugin>
